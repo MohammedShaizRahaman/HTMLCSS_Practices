@@ -1,11 +1,19 @@
 
-.search-bar {
-}
+
 .header{
     height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid ;
+    border-bottom-color: grey;
+    z-index: 100;
 }
 .left-section{
     display: flex;
@@ -42,7 +50,6 @@
     width: 0;
 }
 .search-bar::placeholder{
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;   
 }
 .search-button{
@@ -57,9 +64,45 @@
     margin-left: -1px;
     margin-right: 10px;
 }
+.search-button, .voice-search-button .upload-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+ .upload-icon-container .tooltip,
+  .apps-container .tooltip,
+   .notify-cont .tooltip,
+   .profile-container .tooltip
+   {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.notify-cont:hover .tooltip,
+.profile-container:hover .tooltip
+{
+    opacity: 1;
+}
 .search-icon{
     height: 25px;
-    margin-left: 13px;
 }
 .voice-search-button{
     height: 40px;
@@ -79,7 +122,6 @@
 }
 .voice-search-icon{
     height: 24px;
-    margin-top: 4px;
 }
 .upload-icon{
     height: 24px;
@@ -90,6 +132,22 @@
 }
 .notifications-icon{
     height: 24px;
+}
+.notifications-icon-container{
+    position: relative;
+}
+.notifications-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(178, 0, 0);
+    color: white;
+    border-radius: 2px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    border-radius: 10px;
 }
 .current-user-picture{
     height: 32px;

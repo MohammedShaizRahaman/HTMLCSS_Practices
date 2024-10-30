@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 13 f</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 250px;
+            width: 500px;
+        }
+        .pics-img{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+        .pic-container{
+            height: 200px;
+            width: 80px;
+        }
+        .content-container{
+            display: flex;
+            height: 250px;
+            width: 420px;
+            flex-direction: column;
+
+        }
+        .video-container{
+            display: flex;
+            height: 100px;
+            width: 417px;
+            border: 2px solid grey;
+            flex-direction: row;
+            border-radius: 20px;
+        
+        }
+        .img-container{
+            display: flex;
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+        }
+        .txt-container{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic-container">
+            <img class="pics-img" src="./images/cat2.avif" alt="cat">
+        </div>
+        <div class="content-container">
+            <div class="heading-container">
+                <div class="name-container">
+                    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 700;">supersimple.dev <span style="color: gray; font-weight: 500;">@SuperSimpleDev</span> </p>
+                </div>
+                <div class="desc-container">
+                    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 500; ">What is backend web development? A complete overview. New video is up! </p>
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="img-container">
+                    
+                </div>
+                <div class="link-desc-container">
+                    <div class="txt-container">
+                        <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: grey; font-weight: 700px;">youtube.com</p>
+                    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: -10px; font-weight: 500;">Backend web development - a complete overview (2024)</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
